@@ -571,7 +571,7 @@ header nav ul li a:hover {
 
 /* join */
 .join {
-    background-image: url('/assets/img/george-pagan-iii-WwCTFNpZx8g-unsplash.jpg');
+    background-image: url('../img/george-pagan-iii-WwCTFNpZx8g-unsplash.jpg');
     color: var(--white);
 }
 
