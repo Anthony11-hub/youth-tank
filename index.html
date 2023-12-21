@@ -1,282 +1,864 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youth Tank</title>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <div class="fullcontainer banner" id="homesection">
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <img src="assets/img/logo3-removebg-preview.png" width="150" alt="logo">
-                </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#homesection">Home</a>
-                        </li>
-                        <li>
-                            <a href="#aboutSection">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#programsSection">Programs</a>
-                        </li>
-                        <li>
-                            <a href="#educationSection">Education</a>
-                        </li>
-                        <li>
-                            <a href="#gallerySection">Gallery</a>
-                        </li>
-                        <li>
-                            <a href="#joinSection">Join Us</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stroies na Mayouth</title>
 
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+
+    <!-- 
+    - preload images
+  --></head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header">
+      <!-- <div class="header-top">
         <div class="container">
-            <h1>With discipline & Consistency we can<span>achieve our goals</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem amet corporis in asperiores reiciendis debitis quas nisi, veritatis distinctio vero necessitatibus, adipisci iure temporibus voluptas doloremque eaque enim odio tempore!</p>
-            <button>Become a Member</button>
+          <div class="countdown-text">Contact us on: +254 715 354 384</div>
+
+          <div class="social-wrapper">
+            <p class="social-title">Follow us on :</p>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
+      </div> -->
 
-    <!-- about us -->
-    <section class="fullcontainer" id="aboutSection">
+      <div class="header-bottom" data-header>
         <div class="container">
-            <h2 class="sectionTitle">About Us</h2>
+          <a href="#" class="logo">
+            <img
+              src="assets/images/logo3-removebg-preview.png"
+              width="150"
+              alt="logo" />
+          </a>
+
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a href="#home" class="navbar-link" data-nav-link>Home</a>
+              </li>
+
+              <li class="navbar-item">
+                <a href="#about" class="navbar-link" data-nav-link>About</a>
+              </li>
+
+              <li class="navbar-item">
+                <a href="#programs" class="navbar-link" data-nav-link
+                  >Programs</a
+                >
+              </li>
+
+              <li class="navbar-item">
+                <a href="#events" class="navbar-link" data-nav-link>Events</a>
+              </li>
+
+              <li class="navbar-item">
+                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+              </li>
+
+              <li class="navbar-item">
+                <a href="#footer" class="navbar-link" data-nav-link>Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-actions">
+            <button
+              class="nav-toggle-btn"
+              aria-label="toggle menu"
+              data-nav-toggler>
+              <ion-icon name="menu-outline" class="menu"></ion-icon>
+              <ion-icon name="close-outline" class="close"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+        <section
+          class="section hero"
+          id="home"
+          aria-label="home"
+          style="background-image: url('./assets/images/bg.jpg')">
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle">Stories na Mayouth</p>
+
+              <h1 class="h1 hero-title">
+                Create <span class="span">Explore Expand</span> Conquer
+              </h1>
+
+              <p class="hero-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptate doloribus, dignissimos, consequ
+              </p>
+
+              <button>Join Us</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #FEATURED GAME
+      -->
+
+        <section
+          class="section featured-game"
+          id="about"
+          aria-label="featured game">
+          <div class="container">
+            <h2 class="h2 section-title">About <span class="span">Us</span></h2>
+
             <div class="about-section">
-                    <div class="container">
-                        <!--Content Column-->
-                        <div class="content-column">
-                            <div class="inner-column">
-                                <div class="sec-title">
-                                    <h2>What makes us different</h2>
-                                </div>
-                                <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
-                                <!-- <div class="email">Request Quote: <span class="theme_color">freequote@gmail.com</span></div> -->
-                                <a href="#" class="theme-btn btn-style-three">Reach out</a>
-                            </div>
-                        </div>
-                        <!--Image Column-->
-                        <div class="image-column">
-                            <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
-                                <div class="image">
-                                    <img src="assets/img/anastasiia-r-8w_JshgzTjY-unsplash.jpg" alt="">
-                                    <!-- <div class="overlay-box">
-                                        <div class="year-box"><span class="number">5</span>Years <br> Experience <br> Working</div>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
+              <div class="container">
+                <!--Image Column-->
+                <div class="image-column">
+                  <div
+                    class="inner-column"
+                    data-wow-delay="0ms"
+                    data-wow-duration="1500ms">
+                    <div class="image">
+                      <img
+                        src="assets/images/anastasiia-r-8w_JshgzTjY-unsplash.jpg"
+                        alt="" />
                     </div>
+                  </div>
+                </div>
+                <!--Content Column-->
+                <div class="content-column">
+                  <div class="inner-column">
+                    <div class="sec-title">
+                      <h2>Straight Outta Ruiru</h2>
+                    </div>
+                    <div class="text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries. since the 1500s, when an unknown printer took a
+                      galley of type and scrambled it to make a type specimen
+                      book. It has survived not only five centuries
+                    </div>
+                    <a href="#" class="theme-btn btn-style-three">Learn More</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsam reiciendis maxime ad at exercitationem velit non! Excepturi, at voluptatem. Consectetur neque maxime nam molestiae, eveniet facilis veniam voluptate fuga!</p> -->
-            <div class="cards">
-                <div class="donationBox">
-                    <div class="title">Support our cause</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button>Support</button>
-                </div>
-                <div class="volunteerBox">
-                    <div class="title">Become a volunteer</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button>Volunteer</button>
-                </div>
+          </div>
+        </section>
 
-                <div class="donationBox">
-                    <div class="title">Get Event Organizers</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button>Reach out</button>
-                </div>
+        <!-- 
+        - #SHOP
+      -->
+
+        <div class="section-wrapper">
+          <!-- 
+        - #LATEST GAME
+      -->
+
+          <section
+            class="section latest-game"
+            aria-label="latest game"
+            id="programs">
+            <div class="container">
+              <h2 class="h2 section-title">
+                Our <span class="span">Programs</span>
+              </h2>
+
+              <p class="section-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptate doloribus, dignissimos, consequ
+              </p>
+
+              <ul class="program-cards">
+                <li class="scrollbar-item">
+                  <div class="latest-game-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 400; --height: 470">
+                      <img
+                        src="./assets/images/education-min.jpg"
+                        width="400"
+                        height="470"
+                        loading="lazy"
+                        alt="White Walker Daily"
+                        class="img-cover" />
+                    </figure>
+
+                    <div class="card-content">
+                      <h3 class="h3">
+                        <a href="#" class="card-title"
+                          >Education <span class="span"></span
+                        ></a>
+                      </h3>
+
+                      <a href="#" class="theme-btn btn-style-three"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li class="scrollbar-item">
+                  <div class="latest-game-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 400; --height: 470">
+                      <img
+                        src="./assets/images/community.jpg"
+                        width="400"
+                        height="470"
+                        loading="lazy"
+                        alt="White Walker Daily"
+                        class="img-cover" />
+                    </figure>
+
+                    <div class="card-content">
+                      <h3 class="h3">
+                        <a href="#" class="card-title"
+                          >Community <span class="span">Engagement</span></a
+                        >
+                      </h3>
+
+                      <a href="#" class="theme-btn btn-style-three"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li class="scrollbar-item">
+                  <div class="latest-game-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 400; --height: 470">
+                      <img
+                        src="./assets/images/exhibition.jpg"
+                        width="400"
+                        height="470"
+                        loading="lazy"
+                        alt="White Walker Daily"
+                        class="img-cover" />
+                    </figure>
+
+                    <div class="card-content">
+                      <h3 class="h3">
+                        <a href="#" class="card-title"
+                          >Exhibitions <span class="span"></span
+                        ></a>
+                      </h3>
+
+                      <a href="#" class="theme-btn btn-style-three"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li class="scrollbar-item">
+                  <div class="latest-game-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 400; --height: 470">
+                      <img
+                        src="./assets/images/exchange.jpg"
+                        width="400"
+                        height="470"
+                        loading="lazy"
+                        alt="White Walker Daily"
+                        class="img-cover" />
+                    </figure>
+
+                    <div class="card-content">
+                      <h3 class="h3">
+                        <a href="#" class="card-title"
+                          >Exchange <span class="span">Programs</span></a
+                        >
+                      </h3>
+
+                      <a href="#" class="theme-btn btn-style-three"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li class="scrollbar-item">
+                  <div class="latest-game-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 400; --height: 470">
+                      <img
+                        src="./assets/images/research.jpg"
+                        width="400"
+                        height="470"
+                        loading="lazy"
+                        alt="Hunter Killer II"
+                        class="img-cover" />
+                    </figure>
+
+                    <div class="card-content">
+                      <h3 class="h3">
+                        <a href="#" class="card-title"
+                          >Research <span class="span"></span
+                        ></a>
+                      </h3>
+
+                      <a href="#" class="theme-btn btn-style-three"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li class="scrollbar-item">
+                  <div class="latest-game-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 400; --height: 470">
+                      <img
+                        src="./assets/images/story-1.jpg"
+                        width="400"
+                        height="470"
+                        loading="lazy"
+                        alt="Cyberpunk Daily"
+                        class="img-cover" />
+                    </figure>
+
+                    <div class="card-content">
+                      <h3 class="h3">
+                        <a href="#" class="card-title"
+                          >Story <span class="span">Telling</span></a
+                        >
+                      </h3>
+
+                      <a href="#" class="theme-btn btn-style-three"
+                        >Read More</a
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
+          </section>
         </div>
-    </section>
 
-    <!-- programs -->
-    <section class="programs" id="programsSection">
-        <div class="container">
-            <h2 class="sectionTitle">Programs</h2>
+        <!-- 
+        - #BRAND
+      -->
 
-            <div class="boxContainer">
-                <div class="box">
-                    <div class="cardImage"></div>
-                    <div class="programTitle">Financial Literacy</div>
-                    <div class="text">
-                        <p>Lorem, ipsum dolor sit amet consectetur </p>
-                    </div>
-                    <button>Read More</button>
-                </div>
-                <div class="box">
-                    <div class="cardImage"></div>
-                    <div class="programTitle">Youth & Empowerment</div>
-                    <div class="text">
-                        <p>Lorem, ipsum dolor sit amet consectetur </p>
-                    </div>
-                    <button>Read More</button>
-                </div>
-                <div class="box">
-                    <div class="cardImage"></div>
-                    <div class="programTitle">Education</div>
-                    <div class="text">
-                        <p>Lorem, ipsum dolor sit amet consectetur </p>
-                    </div>
-                    <button>Read More</button>
-                </div>
-                <div class="box">
-                    <div class="cardImage"></div>
-                    <div class="programTitle">Climate Change</div>
-                    <div class="text">
-                        <p>Lorem, ipsum dolor sit amet consectetur </p>
-                    </div>
-                    <button>Read More</button>
-                </div>
-                <div class="box">
-                    <div class="cardImage"></div>
-                    <div class="programTitle">Mental Health</div>
-                    <div class="text">
-                        <p>Lorem, ipsum dolor sit amet consectetur </p>
-                    </div>
-                    <button>Read More</button>
-                </div>
-                <div class="box">
-                    <div class="cardImage"></div>
-                    <div class="programTitle">Creativity</div>
-                    <div class="text">
-                        <p>Lorem, ipsum dolor sit amet consectetur </p>
-                    </div>
-                    <button>Read More</button>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="section brand" aria-label="brand">
+          <div class="container">
+            <ul class="has-scrollbar">
+              <li class="brand-item">
+                <img
+                  src="./assets/images/brand-1.png"
+                  width="90"
+                  height="90"
+                  loading="lazy"
+                  alt="brand logo" />
+              </li>
 
-    <!-- education section -->
-    <section class="education" id="educationSection">
-        
-        <video autoplay muted loop class="videoPlayer">
-            <source src="assets/video/video.mp4" type="video/mp4"/>
+              <li class="brand-item">
+                <img
+                  src="./assets/images/brand-2.png"
+                  width="90"
+                  height="90"
+                  loading="lazy"
+                  alt="brand logo" />
+              </li>
+
+              <li class="brand-item">
+                <img
+                  src="./assets/images/brand-3.png"
+                  width="90"
+                  height="90"
+                  loading="lazy"
+                  alt="brand logo" />
+              </li>
+
+              <li class="brand-item">
+                <img
+                  src="./assets/images/brand-4.png"
+                  width="90"
+                  height="90"
+                  loading="lazy"
+                  alt="brand logo" />
+              </li>
+
+              <li class="brand-item">
+                <img
+                  src="./assets/images/brand-5.png"
+                  width="90"
+                  height="90"
+                  loading="lazy"
+                  alt="brand logo" />
+              </li>
+
+              <li class="brand-item">
+                <img
+                  src="./assets/images/brand-6.png"
+                  width="90"
+                  height="90"
+                  loading="lazy"
+                  alt="brand logo" />
+              </li>
+            </ul>
+          </div>
+          <div class="brand-text-container">
+            <p>Partnerships</p>
+          </div>
+        </section>
+
+        <!-- events edition -->
+        <section class="section events" id="events">
+          <video autoplay muted loop class="videoPlayer">
+            <source src="assets/video/videoplayback.mp4" type="video/mp4" />
             Your browser does not support this video
-        </video>
-        
+          </video>
+
+          <div class="container">
+            <div class="events-container">
+              <h3>
+                Explore the various <br />
+                <strong>EVENTS</strong> we have done
+              </h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Inventore voluptatum eligendi recusandae nihil odio corrupti
+                incidunt, velit blanditiis sint voluptas ipsa voluptates culpa
+                quae accusamus error aliquid reiciendis et iusto!
+              </p>
+              <a href="#" class="theme-btn btn-style-three">Explore</a>
+            </div>
+          </div>
+        </section>
+        <!-- 
+        - #BLOG
+      -->
+
+        <section class="section blog" id="blog" aria-label="blog">
+          <div class="container">
+            <h2 class="h2 section-title">Our <span class="span">Blog</span></h2>
+
+            <p class="section-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptate doloribus, dignissimos, consequ
+            </p>
+
+            <ul class="blog-list">
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 400; --height: 290">
+                    <img
+                      src="./assets/images/youth-min.jpg"
+                      width="400"
+                      height="290"
+                      loading="lazy"
+                      alt="Shooter Action Video"
+                      class="img-cover" />
+                  </figure>
+
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon name="person-outline"></ion-icon>
+
+                        <a href="#" class="item-text">Admin</a>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon name="calendar-outline"></ion-icon>
+
+                        <time datetime="2022-09-19" class="item-text"
+                          >September 19, 2022</time
+                        >
+                      </li>
+                    </ul>
+
+                    <h3>
+                      <a href="#" class="card-title">Cultural exchange week</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Voluptate doloribus, dignissimos, consequ
+                    </p>
+
+                    <a href="#" class="card-link">
+                      <span class="span">Read More</span>
+
+                      <ion-icon name="caret-forward"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 400; --height: 290">
+                    <img
+                      src="./assets/images/financial.jpg"
+                      width="400"
+                      height="290"
+                      loading="lazy"
+                      alt="The Walking Dead"
+                      class="img-cover" />
+                  </figure>
+
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon name="person-outline"></ion-icon>
+
+                        <a href="#" class="item-text">Admin</a>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon name="calendar-outline"></ion-icon>
+
+                        <time datetime="2022-09-19" class="item-text"
+                          >September 19, 2022</time
+                        >
+                      </li>
+                    </ul>
+
+                    <h3>
+                      <a href="#" class="card-title">Financial Literacy</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Voluptate doloribus, dignissimos, consequ
+                    </p>
+
+                    <a href="#" class="card-link">
+                      <span class="span">Read More</span>
+
+                      <ion-icon name="caret-forward"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 400; --height: 290">
+                    <img
+                      src="./assets/images/mental.jpg"
+                      width="400"
+                      height="290"
+                      loading="lazy"
+                      alt="Defense Of The Ancients"
+                      class="img-cover" />
+                  </figure>
+
+                  <div class="card-content">
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon name="person-outline"></ion-icon>
+
+                        <a href="#" class="item-text">Admin</a>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon name="calendar-outline"></ion-icon>
+
+                        <time datetime="2022-09-19" class="item-text"
+                          >September 19, 2022</time
+                        >
+                      </li>
+                    </ul>
+
+                    <h3>
+                      <a href="#" class="card-title">Youth Mental Wellness</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Voluptate doloribus, dignissimos, consequ
+                    </p>
+
+                    <a href="#" class="card-link">
+                      <span class="span">Read More</span>
+
+                      <ion-icon name="caret-forward"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top">
         <div class="container">
-            <div class="sectionTitle">Education</div>
+          <div class="footer-brand">
+            <a href="#" class="logo">Youth Tank</a>
 
-            <div class="educationContainer">
-                <h3>Education is essential for <br />
-                    <strong>BETTER FUTURE</strong></h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore voluptatum eligendi recusandae nihil odio corrupti incidunt, velit blanditiis sint voluptas ipsa voluptates culpa quae accusamus error aliquid reiciendis et iusto!</p>
-                <button>EXPLORE NOW</button>
+            <p class="footer-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptate
+            </p>
+
+            <ul class="contact-list">
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <ion-icon name="location"></ion-icon>
+                </div>
+
+                <address class="item-text">
+                  Address : PO Box 00232 Kiambu, Ruiru
+                </address>
+              </li>
+
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <ion-icon name="headset"></ion-icon>
+                </div>
+
+                <a href="tel:+241245654235" class="item-text"
+                  >Phone : +24 1245 654 235</a
+                >
+              </li>
+
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <ion-icon name="mail-open"></ion-icon>
+                </div>
+
+                <a href="mailto:info@exemple.com" class="item-text"
+                  >Email : info@exemple.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Useful links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Programs</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Events</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Our Blog</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Need Help?</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Refund Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Affiliate</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Use Cases</a>
+            </li>
+          </ul>
+
+          <div class="footer-wrapper">
+            <div class="social-wrapper">
+              <p class="footer-list-title">Follow Us</p>
+
+              <ul class="social-list">
+                <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="background-color: #3b5998">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="background-color: #55acee">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="background-color: #d71e18">
+                    <ion-icon name="logo-pinterest"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="background-color: #1565c0">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+              </ul>
             </div>
-        </div>
-    </section>
 
-    <!-- gallery -->
-    <section class="gallery" id="gallerySection">
+            <div class="footer-newsletter">
+              <p class="footer-list-title">Newsletter Sign Up</p>
+
+              <form action="" class="footer-newsletter">
+                <input
+                  type="email"
+                  name="email_address"
+                  aria-label="email"
+                  placeholder="Enter your email"
+                  required
+                  class="email-field" />
+
+                <button type="submit" class="footer-btn" aria-label="submit">
+                  <ion-icon name="rocket"></ion-icon>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="footer-bottom">
         <div class="container">
-            <div class="sectionTitle">Gallery</div>
+          <p class="copyright">
+            &copy; 2022 Gamics. All Right Reserved by
+            <a href="#" class="copyright-link">codewithsadee</a>
+          </p>
 
-            <div class="galleryContainer">
-                <div class="item">
-                    <span class="title">Image Title</span>
-                    <img src="assets/img/ben-tofan-3OLPMNzr27k-unsplash.jpg" alt="">
-                </div>
-
-                <div class="item">
-                    <span class="title">Image Title</span>
-                    <img src="assets/img/antoine-giret-7_TSzqJms4w-unsplash.jpg" alt="">
-                </div>
-
-                <div class="item">
-                    <span class="title">Image Title</span>
-                    <img src="assets/img/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt="">
-                </div>
-
-                <div class="item">
-                    <span class="title">Image Title</span>
-                    <img src="assets/img/vinicius-amnx-amano-pAwXYkNzgiI-unsplash.jpg" alt="">
-                </div>
-
-                <div class="item">
-                    <span class="title">Image Title</span>
-                    <img src="assets/img/hannah-busing-G-_L3Eqkqmc-unsplash.jpg" alt="">
-                </div>
-
-                <div class="item">
-                    <span class="title">Image Title</span>
-                    <img src="assets/img/julia-kicova-g827ZOCwt30-unsplash.jpg" alt="">
-                </div>
-
-                <div class="item">
-                    <span class="title">Image Title</span>
-                    <img src="assets/img/shane-rounce-DNkoNXQti3c-unsplash.jpg" alt="">
-                </div>
-
-                <div class="item">
-                    <span class="title">Image Title</span>
-                    <img src="assets/img/zachary-nelson-98Elr-LIvD8-unsplash.jpg" alt="">
-                </div>
-            </div>
+          <img
+            src="./assets/images/footer-bottom-img.png"
+            width="340"
+            height="21"
+            loading="lazy"
+            alt=""
+            class="footer-bottom-img" />
         </div>
-    </section>
-
-    <!-- join us -->
-    <section class="join" id="joinSection">
-        <div class="container">
-            <div class="joinTitle">JOIN US TODAY</div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa necessitatibus assumenda ducimus dolorum illo eos corrupti! Officiis quidem, sapiente, corrupti delectus ratione adipisci officia quos repudiandae dignissimos molestias itaque. Qui.</p>
-            <button class="join-now">JOIN US</button>
-            <button class="adopt-btn">SUBSCRIBE</button>
-        </div>
-    </section>
-
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="newsLetterContainer">
-                <img src="assets/img/m__1_-removebg-preview.png" width="150" alt="">
-
-                <p>Subscribe to our newsletter and stay up to date with our work</p>
-                <input type="text" placeholder="Enter your email">
-            </div>
-
-            <div class="linksContainer">
-                <div class="title">Useful links</div>
-                <ul>
-                    <li>
-                        <a href="#homesection">Home</a>
-                    </li>
-                    <li>
-                        <a href="#aboutSection">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#programsSection">Programs</a>
-                    </li>
-                    <li>
-                        <a href="#educationSection">Education</a>
-                    </li>
-                    <li>
-                        <a href="#gallerySection">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="#joinSection">Join Us</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="connectContainer">
-                <div class="title">Connect With Us</div>
-                <p>Kiambu, Ruiru 00232</p>
-                <p>youthtank@gmail.com</p>
-                <p>(+254) 715 354 384</p>
-            </div>
-
-        </div>
+      </div> -->
     </footer>
-</body>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn>
+      <ion-icon name="caret-up"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>
