@@ -2,20 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stories na Mayouth</title>
-
-    <!-- 
-    - favicon
-  -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
-
-    <!-- 
-    - custom css link
-  -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- 
     - google font link
   -->
@@ -24,97 +13,48 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet" />
-
-    <!-- 
-    - preload images
-  --></head>
-
+  </head>
   <body id="top">
-    <!-- 
-    - #HEADER
-  -->
-
     <header class="header">
-      <!-- <div class="header-top">
-        <div class="container">
-          <div class="countdown-text">Contact us on: +254 715 354 384</div>
-
-          <div class="social-wrapper">
-            <p class="social-title">Follow us on :</p>
-
-            <ul class="social-list">
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-pinterest"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="header-bottom" data-header>
+      <div class="header-section" data-header>
         <div class="container">
           <a href="#" class="logo">
             <img
               src="assets/images/logo3-removebg-preview.png"
-              width="150"
-              alt="logo" />
+              alt="youth tank logo"
+              width="150" />
           </a>
-
+          <!-- navbar -->
           <nav class="navbar" data-navbar>
             <ul class="navbar-list">
               <li class="navbar-item">
                 <a href="#home" class="navbar-link" data-nav-link>Home</a>
               </li>
-
               <li class="navbar-item">
                 <a href="#about" class="navbar-link" data-nav-link>About</a>
               </li>
-
               <li class="navbar-item">
                 <a href="#programs" class="navbar-link" data-nav-link
                   >Programs</a
                 >
               </li>
-
               <li class="navbar-item">
                 <a href="#events" class="navbar-link" data-nav-link>Events</a>
               </li>
-
               <li class="navbar-item">
                 <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
               </li>
-
               <li class="navbar-item">
-                <a href="#footer" class="navbar-link" data-nav-link>Contact</a>
+                <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
               </li>
             </ul>
           </nav>
-
-          <div class="header-actions">
+          <!-- open and close buttons -->
+          <div class="header-buttons">
             <button
               class="nav-toggle-btn"
-              aria-label="toggle menu"
-              data-nav-toggler>
+              data-nav-toggler
+              aria-label="toggle Menu">
               <ion-icon name="menu-outline" class="menu"></ion-icon>
               <ion-icon name="close-outline" class="close"></ion-icon>
             </button>
@@ -124,11 +64,9 @@
     </header>
     <main>
       <article>
-        <!-- 
-        - #HERO
-      -->
+        <!-- hero section -->
         <section
-          class="section hero"
+          class="hero-section"
           id="home"
           aria-label="home"
           style="background-image: url('./assets/images/bg.jpg')">
@@ -150,262 +88,214 @@
           </div>
         </section>
 
-        <!-- 
-        - #FEATURED GAME
-      -->
-
-        <section
-          class="section featured-game"
-          id="about"
-          aria-label="featured game">
+        <!-- about section -->
+        <section class="about-section" id="about" aria-label="about ">
           <div class="container">
             <h2 class="h2 section-title">About <span class="span">Us</span></h2>
 
-            <div class="about-section">
-              <div class="container">
-                <!--Image Column-->
-                <div class="image-column">
-                  <div
-                    class="inner-column"
-                    data-wow-delay="0ms"
-                    data-wow-duration="1500ms">
-                    <div class="image">
-                      <img
-                        src="assets/images/anastasiia-r-8w_JshgzTjY-unsplash-min.jpg"
-                        alt="" />
-                    </div>
+            <div class="about-content">
+              <!--Image Column-->
+              <div class="image-column">
+                <div
+                  class="inner-column"
+                  data-wow-delay="0ms"
+                  data-wow-duration="1500ms">
+                  <div class="image">
+                    <img
+                      src="assets/images/anastasiia-r-8w_JshgzTjY-unsplash-min.jpg"
+                      alt="" />
                   </div>
                 </div>
-                <!--Content Column-->
-                <div class="content-column">
-                  <div class="inner-column">
-                    <div class="sec-title">
-                      <h2>Straight Outta Ruiru</h2>
-                    </div>
-                    <div class="text">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries. since the 1500s, when an unknown printer took a
-                      galley of type and scrambled it to make a type specimen
-                      book. It has survived not only five centuries
-                    </div>
-                    <a href="#" class="theme-btn btn-style-three">Learn More</a>
+              </div>
+              <!--Content Column-->
+              <div class="content-column">
+                <div class="inner-column">
+                  <div class="sec-title">
+                    <h2>Straight Outta Ruiru</h2>
                   </div>
+                  <div class="text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries.
+                    since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries
+                  </div>
+                  <a href="#" class="btn">Learn More</a>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <!-- our programs -->
+        <section class="programs-section" id="programs" aria-label="programs">
+          <div class="container">
+            <h2 class="h2 section-title">
+              Our <span class="span">Programs</span>
+            </h2>
 
-        <!-- 
-        - #SHOP
-      -->
+            <p class="section-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptate doloribus, dignissimos, consequ
+            </p>
 
-        <div class="section-wrapper">
-          <!-- 
-        - #LATEST GAME
-      -->
+            <ul class="program-cards">
+              <li>
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 400; --height: 470">
+                    <img
+                      src="./assets/images/education-min.jpg"
+                      alt="education"
+                      width="400"
+                      height="470"
+                      loading="lazy"
+                      class="img-cover" />
+                  </figure>
 
-          <section
-            class="section latest-game"
-            aria-label="latest game"
-            id="programs">
-            <div class="container">
-              <h2 class="h2 section-title">
-                Our <span class="span">Programs</span>
-              </h2>
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Education</a>
+                    </h3>
 
-              <p class="section-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptate doloribus, dignissimos, consequ
-              </p>
-
-              <ul class="program-cards">
-                <li class="scrollbar-item">
-                  <div class="latest-game-card">
-                    <figure
-                      class="card-banner img-holder"
-                      style="--width: 400; --height: 470">
-                      <img
-                        src="./assets/images/education-min.jpg"
-                        width="400"
-                        height="470"
-                        loading="lazy"
-                        alt="White Walker Daily"
-                        class="img-cover" />
-                    </figure>
-
-                    <div class="card-content">
-                      <h3 class="h3">
-                        <a href="#" class="card-title"
-                          >Education <span class="span"></span
-                        ></a>
-                      </h3>
-
-                      <a href="#" class="theme-btn btn-style-three"
-                        >Read More</a
-                      >
-                    </div>
+                    <a href="#" class="btn">Read More</a>
                   </div>
-                </li>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 400; --height: 470">
+                    <img
+                      src="./assets/images/community.jpg"
+                      alt="community"
+                      width="400"
+                      height="470"
+                      loading="lazy"
+                      class="img-cover" />
+                  </figure>
 
-                <li class="scrollbar-item">
-                  <div class="latest-game-card">
-                    <figure
-                      class="card-banner img-holder"
-                      style="--width: 400; --height: 470">
-                      <img
-                        src="./assets/images/community.jpg"
-                        width="400"
-                        height="470"
-                        loading="lazy"
-                        alt="White Walker Daily"
-                        class="img-cover" />
-                    </figure>
-
-                    <div class="card-content">
-                      <h3 class="h3">
-                        <a href="#" class="card-title"
-                          >Community <span class="span">Engagement</span></a
-                        >
-                      </h3>
-
-                      <a href="#" class="theme-btn btn-style-three"
-                        >Read More</a
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Community <span class="span">Engagement</span></a
                       >
-                    </div>
+                    </h3>
+
+                    <a href="#" class="btn">Read More</a>
                   </div>
-                </li>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 400; --height: 470">
+                    <img
+                      src="./assets/images/exhibition.jpg"
+                      alt="exhibition"
+                      width="400"
+                      height="470"
+                      loading="lazy"
+                      class="img-cover" />
+                  </figure>
 
-                <li class="scrollbar-item">
-                  <div class="latest-game-card">
-                    <figure
-                      class="card-banner img-holder"
-                      style="--width: 400; --height: 470">
-                      <img
-                        src="./assets/images/exhibition.jpg"
-                        width="400"
-                        height="470"
-                        loading="lazy"
-                        alt="White Walker Daily"
-                        class="img-cover" />
-                    </figure>
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Exhibitions</a>
+                    </h3>
 
-                    <div class="card-content">
-                      <h3 class="h3">
-                        <a href="#" class="card-title"
-                          >Exhibitions <span class="span"></span
-                        ></a>
-                      </h3>
+                    <a href="#" class="btn">Read More</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 400; --height: 470">
+                    <img
+                      src="./assets/images/exchange.jpg"
+                      alt="exchange"
+                      width="400"
+                      height="470"
+                      loading="lazy"
+                      class="img-cover" />
+                  </figure>
 
-                      <a href="#" class="theme-btn btn-style-three"
-                        >Read More</a
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Exchange <span class="span">Programs</span></a
                       >
-                    </div>
+                    </h3>
+
+                    <a href="#" class="btn">Read More</a>
                   </div>
-                </li>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 400; --height: 470">
+                    <img
+                      src="./assets/images/research.jpg"
+                      alt="research"
+                      width="400"
+                      height="470"
+                      loading="lazy"
+                      class="img-cover" />
+                  </figure>
 
-                <li class="scrollbar-item">
-                  <div class="latest-game-card">
-                    <figure
-                      class="card-banner img-holder"
-                      style="--width: 400; --height: 470">
-                      <img
-                        src="./assets/images/exchange.jpg"
-                        width="400"
-                        height="470"
-                        loading="lazy"
-                        alt="White Walker Daily"
-                        class="img-cover" />
-                    </figure>
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Research</a>
+                    </h3>
 
-                    <div class="card-content">
-                      <h3 class="h3">
-                        <a href="#" class="card-title"
-                          >Exchange <span class="span">Programs</span></a
-                        >
-                      </h3>
+                    <a href="#" class="btn">Read More</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 400; --height: 470">
+                    <img
+                      src="./assets/images/story-1.jpg"
+                      alt="story"
+                      width="400"
+                      height="470"
+                      loading="lazy"
+                      class="img-cover" />
+                  </figure>
 
-                      <a href="#" class="theme-btn btn-style-three"
-                        >Read More</a
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Story <span class="span">Telling</span></a
                       >
-                    </div>
+                    </h3>
+
+                    <a href="#" class="btn">Read More</a>
                   </div>
-                </li>
-
-                <li class="scrollbar-item">
-                  <div class="latest-game-card">
-                    <figure
-                      class="card-banner img-holder"
-                      style="--width: 400; --height: 470">
-                      <img
-                        src="./assets/images/research.jpg"
-                        width="400"
-                        height="470"
-                        loading="lazy"
-                        alt="Hunter Killer II"
-                        class="img-cover" />
-                    </figure>
-
-                    <div class="card-content">
-                      <h3 class="h3">
-                        <a href="#" class="card-title"
-                          >Research <span class="span"></span
-                        ></a>
-                      </h3>
-
-                      <a href="#" class="theme-btn btn-style-three"
-                        >Read More</a
-                      >
-                    </div>
-                  </div>
-                </li>
-
-                <li class="scrollbar-item">
-                  <div class="latest-game-card">
-                    <figure
-                      class="card-banner img-holder"
-                      style="--width: 400; --height: 470">
-                      <img
-                        src="./assets/images/story-1.jpg"
-                        width="400"
-                        height="470"
-                        loading="lazy"
-                        alt="Cyberpunk Daily"
-                        class="img-cover" />
-                    </figure>
-
-                    <div class="card-content">
-                      <h3 class="h3">
-                        <a href="#" class="card-title"
-                          >Story <span class="span">Telling</span></a
-                        >
-                      </h3>
-
-                      <a href="#" class="theme-btn btn-style-three"
-                        >Read More</a
-                      >
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </section>
-        </div>
-
-        <!-- 
-        - #BRAND
-      -->
-
-        <section class="section brand" aria-label="brand">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- partnerships -->
+        <section class="partners-section" aria-label="partners">
           <div class="container">
             <ul class="has-scrollbar">
               <li class="brand-item">
                 <img
-                  src="./assets/images/brand-1.png"
+                  src="./assets/images/usaid-logo-63CF51F2DA-seeklogo.com.png"
                   width="90"
                   height="90"
                   loading="lazy"
@@ -414,7 +304,7 @@
 
               <li class="brand-item">
                 <img
-                  src="./assets/images/brand-2.png"
+                  src="./assets/images/microsoft_PNG13.png"
                   width="90"
                   height="90"
                   loading="lazy"
@@ -423,34 +313,34 @@
 
               <li class="brand-item">
                 <img
-                  src="./assets/images/brand-3.png"
-                  width="90"
-                  height="90"
+                  src="./assets/images/techbloom.png"
+                  width="100"
+                  height="120"
                   loading="lazy"
                   alt="brand logo" />
               </li>
 
               <li class="brand-item">
                 <img
-                  src="./assets/images/brand-4.png"
-                  width="90"
-                  height="90"
+                  src="./assets/images/emblem-UNICEF-500x386-removebg-preview.png"
+                  width="120"
+                  height="160"
                   loading="lazy"
                   alt="brand logo" />
               </li>
 
               <li class="brand-item">
                 <img
-                  src="./assets/images/brand-5.png"
-                  width="90"
-                  height="90"
+                  src="./assets/images/UN-United-Nations-Emblem-700x394.png"
+                  width="150"
+                  height="170"
                   loading="lazy"
                   alt="brand logo" />
               </li>
 
               <li class="brand-item">
                 <img
-                  src="./assets/images/brand-6.png"
+                  src="./assets/images/absa-logo-B46B94C6A3-seeklogo.com.png"
                   width="90"
                   height="90"
                   loading="lazy"
@@ -462,7 +352,6 @@
             <p>Partnerships</p>
           </div>
         </section>
-
         <!-- events edition -->
         <section class="section events" id="events">
           <video autoplay muted loop class="videoPlayer">
@@ -482,14 +371,10 @@
                 incidunt, velit blanditiis sint voluptas ipsa voluptates culpa
                 quae accusamus error aliquid reiciendis et iusto!
               </p>
-              <a href="#" class="theme-btn btn-style-three">Explore</a>
+              <a href="#" class="btn">Explore</a>
             </div>
           </div>
         </section>
-        <!-- 
-        - #BLOG
-      -->
-
         <section class="section blog" id="blog" aria-label="blog">
           <div class="container">
             <h2 class="h2 section-title">Our <span class="span">Blog</span></h2>
@@ -651,11 +536,6 @@
         </section>
       </article>
     </main>
-
-    <!-- 
-    - #FOOTER
-  -->
-
     <footer class="footer">
       <div class="footer-top">
         <div class="container">
@@ -815,28 +695,8 @@
           </div>
         </div>
       </div>
-
-      <!-- <div class="footer-bottom">
-        <div class="container">
-          <p class="copyright">
-            &copy; 2022 Gamics. All Right Reserved by
-            <a href="#" class="copyright-link">codewithsadee</a>
-          </p>
-
-          <img
-            src="./assets/images/footer-bottom-img.png"
-            width="340"
-            height="21"
-            loading="lazy"
-            alt=""
-            class="footer-bottom-img" />
-        </div>
-      </div> -->
     </footer>
-
-    <!-- 
-    - #BACK TO TOP
-  -->
+    <!-- back to the top -->
 
     <a
       href="#top"
@@ -846,14 +706,10 @@
       <ion-icon name="caret-up"></ion-icon>
     </a>
 
-    <!-- 
-    - custom js link
-  -->
-    <script src="./assets/js/script.js" defer></script>
+    <!-- custom javascript -->
+    <script src="assets/js/script.js"></script>
 
-    <!-- 
-    - ionicon link
-  -->
+    <!-- ionicons -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
