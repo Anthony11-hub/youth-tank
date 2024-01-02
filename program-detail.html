@@ -7,18 +7,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/style-2.css" />
     <style>
-      .hero-section {
-        min-height: 30vh;
-      }
-      .hero-content {
-        text-align: left;
-      }
-
-      @media (min-width: 992px) {
-        /* about section */
-        .about-content {
-          grid-template-columns: 40% 60%;
-        }
+      .btn {
+        color: #fff !important;
       }
     </style>
     <!-- 
@@ -89,7 +79,7 @@
           id="home"
           aria-label="home"
           style="
-            background-image: url('./assets/images/community.jpg');
+            background-image: url('./assets/images/bg-top-3.jpg');
             height: 200px;
           ">
           <div class="container">
@@ -114,9 +104,7 @@
                   data-wow-delay="0ms"
                   data-wow-duration="1500ms">
                   <div class="image">
-                    <img
-                      src="assets/images/anastasiia-r-8w_JshgzTjY-unsplash-min.jpg"
-                      alt="" />
+                    <img src="assets/images/community.jpg" alt="" />
                   </div>
                 </div>
               </div>
@@ -124,7 +112,7 @@
               <div class="content-column">
                 <div class="inner-column">
                   <div class="sec-title">
-                    <h2>Straight Outta Ruiru</h2>
+                    <h2>Community Programs</h2>
                   </div>
                   <div class="text">
                     Lorem Ipsum is simply dummy text of the printing and
@@ -138,8 +126,147 @@
                   </div>
                   <!-- <a href="#" class="btn">Learn More</a> -->
                 </div>
+                <div class="video-container">
+                  <div class="yt-holder">
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/c5nhWy7Zoxg?si=ob7Mz1NLAWc1yT5r"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+        </section>
+        <!-- related programs -->
+        <!-- <section class="related section">
+          <div class="container">
+            <h1 class="heading">RELATED SERVICES</h1>
+
+            <div class="gallery">
+              <a href="long-distance.html">
+                <div class="gallery-item">
+                  <img
+                    class="gallery-image"
+                    src="assets/images/education-min.jpg"
+                    alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer" />
+                  <p class="image-description">Long Distance</p>
+                </div>
+              </a>
+
+              <a href="car-hire.html">
+                <div class="gallery-item">
+                  <img
+                    class="gallery-image"
+                    src="assets/images/exchange.jpg"
+                    alt="sunset behind San Francisco city skyline" />
+                  <p class="image-description">Car Hire</p>
+                </div>
+              </a>
+
+              <a href="office.html">
+                <div class="gallery-item">
+                  <img
+                    class="gallery-image"
+                    src="assets/images/exhibition.jpg"
+                    alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan" />
+                  <p class="image-description">Office Relocation</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section> -->
+        <section
+          class="programs-section"
+          id="programs"
+          aria-label="programs"
+          style="padding-block: 40px">
+          <div class="container">
+            <h2 class="h2" style="margin-bottom: 20px; color: #333">
+              Related <span class="span">Programs</span>
+            </h2>
+
+            <ul class="program-cards">
+              <li>
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 400; --height: 470">
+                    <img
+                      src="./assets/images/education-min.jpg"
+                      alt="education"
+                      width="400"
+                      height="470"
+                      loading="lazy"
+                      class="img-cover" />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="program-detail.html" class="card-title"
+                        >Education</a
+                      >
+                    </h3>
+
+                    <a href="program-detail.html" class="btn">Read More</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 400; --height: 470">
+                    <img
+                      src="./assets/images/community.jpg"
+                      alt="community"
+                      width="400"
+                      height="470"
+                      loading="lazy"
+                      class="img-cover" />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="program-detail.html" class="card-title"
+                        >Community <span class="span">Engagement</span></a
+                      >
+                    </h3>
+
+                    <a href="program-detail.html" class="btn">Read More</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 400; --height: 470">
+                    <img
+                      src="./assets/images/exhibition.jpg"
+                      alt="exhibition"
+                      width="400"
+                      height="470"
+                      loading="lazy"
+                      class="img-cover" />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="program-detail.html" class="card-title"
+                        >Exhibitions</a
+                      >
+                    </h3>
+
+                    <a href="program-detail.html" class="btn">Read More</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
       </article>
