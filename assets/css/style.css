@@ -1297,6 +1297,11 @@ body {
 }
 
 
+/* contact page */
+.contact {
+    padding-inline: 60px;
+}
+
 
 /*-----------------------------------*\
   #MEDIA QUERIES

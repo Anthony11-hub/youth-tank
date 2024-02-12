@@ -1,6 +1,4 @@
-'use strict';
-
-
+"use strict";
 
 const navbar = document.querySelector("[data-navbar]");
 const navbarLinks = document.querySelectorAll("[data-nav-link]");
@@ -17,23 +15,6 @@ for (let i = 0; i < navbarLinks.length; i++) {
     navbarToggler.classList.remove("active");
   });
 }
-
-
-
-/**
- * search toggle
- */
-
-const searchTogglers = document.querySelectorAll("[data-search-toggler]");
-const searchBox = document.querySelector("[data-search-box]");
-
-for (let i = 0; i < searchTogglers.length; i++) {
-  searchTogglers[i].addEventListener("click", function () {
-    searchBox.classList.toggle("active");
-  });
-}
-
-
 
 /**
  * header

@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events Edition</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/style-2.css" />
+    <style>
+      .hero-section {
+        min-height: 40vh !important;
+      }
+    </style>
     <!-- 
     - google font link
-  -->
+    -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,12 +49,12 @@
                 >
               </li>
               <li class="navbar-item">
-                <a href="blog.html" class="navbar-link" data-nav-link>Blog</a>
+                <a href="market.html" class="navbar-link" data-nav-link
+                  >Market Hub</a
+                >
               </li>
               <li class="navbar-item">
-                <a href="contact.html" class="navbar-link" data-nav-link
-                  >Contact</a
-                >
+                <a href="#footer" class="navbar-link" data-nav-link>Contact</a>
               </li>
             </ul>
           </nav>
@@ -82,6 +86,17 @@
               <p class="hero-subtitle">Stories na Mayouth</p>
               <h1 class="h1 hero-title">Events <span class="span"></span></h1>
             </div>
+          </div>
+        </section>
+        <section class="section blog" id="blog" aria-label="blog">
+          <div class="container">
+            <p class="section-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptate doloribus, dignissimos, consequ
+            </p>
+            <ul class="blog-list js-event-card">
+              <!-- event cards go here -->
+            </ul>
           </div>
         </section>
       </article>
@@ -258,6 +273,7 @@
 
     <!-- custom javascript -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/events.js"></script>
 
     <!-- ionicons -->
     <script
