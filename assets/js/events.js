@@ -1,12 +1,12 @@
 fetch("/json/events.json")
-  .then((response) => response.json())
-  .then((events) => {
-    const eventCard = document.querySelector(".js-event-card");
+    .then((response) => response.json())
+    .then((events) => {
+        const eventCard = document.querySelector(".js-event-card");
 
-    function showevent(eventToDisplay) {
-      const eventHTML = eventToDisplay
-        .map(
-          (event) => `
+        function showevent(eventToDisplay) {
+            const eventHTML = eventToDisplay
+                .map(
+                    (event) => `
             <li>
                 <div class="blog-card">
                   <figure
@@ -38,8 +38,7 @@ fetch("/json/events.json")
                     </h3>
 
                     <p class="card-text">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Voluptate doloribus, dignissimos, consequ
+                      ${event.eventDescription}
                     </p>
 
                     <a href="event-details.html?event=${event.eventTitle}" class="card-link">
@@ -51,13 +50,13 @@ fetch("/json/events.json")
                 </div>
               </li>
                     `
-        )
-        .join("");
+                )
+                .join("");
 
-      eventCard.innerHTML = eventHTML;
-    }
-    showevent(events);
-  })
-  .catch((err) => {
-    console.error("Error fetching member: ", err);
-  });
+            eventCard.innerHTML = eventHTML;
+        }
+        showevent(events);
+    })
+    .catch((err) => {
+        console.error("Error fetching member: ", err);
+    });
